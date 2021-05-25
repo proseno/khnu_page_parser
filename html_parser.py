@@ -52,11 +52,11 @@ def prepare_data(url: str):
     if (config.images):
         image_urls = get_img_src(html)
         img_count = set_img_links(image_urls)
-        response += 'Image tag count = ' + str(img_count) + ' ,details in img_links.txt\n'
+        response += 'Image tag count = ' + str(img_count) + ' ,details in var/img_links.txt\n'
     if (config.links):
         links = get_a_href(html)
         links_count = set_href(links)
-        response += 'Links tag count = ' + str(links_count) + ' , details in links.txt'
+        response += 'Links tag count = ' + str(links_count) + ' , details in var/links.txt'
 
     return response
 
