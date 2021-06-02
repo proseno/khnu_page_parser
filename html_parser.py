@@ -59,7 +59,7 @@ def prepare_data(url: str):
         response += 'Links tag count = ' + str(links_count) + ' , details in var/links.txt'
 
     return response
-
+# chui
 
 def prepare_img_response(imgs: list):
     response = 'Image urls on the matched page: \n'
